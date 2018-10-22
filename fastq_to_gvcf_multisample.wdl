@@ -1,3 +1,7 @@
+# This is a sample script for GATK3 workflow wdl script. 
+# inputSamplesFile should have 3 columns: sample_id, fastq1, fastq2.
+# reference files and gatk/picard are defined as strings to avoid dealing with indices and copying files.
+
 
 workflow fastq_to_gvcf {
   
