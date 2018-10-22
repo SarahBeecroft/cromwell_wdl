@@ -1,0 +1,9 @@
+{
+  "fastq_to_gvcf.dbsnp": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dbsnp138.vcf",
+  "fastq_to_gvcf.ref": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
+  "fastq_to_gvcf.picard": "$EBROOTPICARD/picard.jar",
+  "fastq_to_gvcf.fastq_dir": "/home/sp2249/scratch60/Weihl/fastqs",
+  "fastq_to_gvcf.inputSamplesFile": "/home/sp2249/scratch60/Weihl/samples_1_40.txt",
+  "fastq_to_gvcf.gatk": "$EBROOTGATK/GenomeAnalysisTK.jar",
+  "fastq_to_gvcf.targets": "/gpfs/ycga/project/ysm/lek/ml2529/reference/exome_calling_regions.v1.interval_list"
+}
