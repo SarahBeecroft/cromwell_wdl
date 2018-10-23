@@ -1,6 +1,13 @@
 # This is a sample script for GATK3 workflow wdl script. 
 # inputSamplesFile should have 3 columns: sample_id, fastq1, fastq2.
 # reference files and gatk/picard are defined as strings to avoid dealing with indices and copying files.
+# Make sure that you have bwa, gatk, picard and R ready to be accessed from command line. 
+# For gatk and picard input string is specified in inputs.json.
+# Tested with the following versions on Ruddle:
+# module load BWA/0.7.15-foss-2016a
+# module load picard/2.9.0-Java-1.8.0_121
+# module load GATK/3.8-0-Java-1.8.0_121
+# module load R/3.4.1-foss-2016b
 
 
 workflow fastq_to_gvcf {
@@ -119,7 +126,6 @@ task bwa{
 	String fastq_dir
 
 	command {
-		module load BWA/0.7.15-foss-2016a
 		bwa mem -M -t 8 -R "@RG\tID:${prefix}\tPL:ILLUMINA\tSM:${prefix}" ${ref} ${fastq_dir}/${fastq1} ${fastq_dir}/${fastq2} > ${prefix}.aligned_reads.sam 2> ${prefix}.bwa.stderr.log
 	}
 	output {
@@ -134,7 +140,6 @@ task sort_sam{
 	File input_sam
 
 	command {
-		module load picard/2.9.0-Java-1.8.0_121
 		java -Xmx14G -jar ${picard} SortSam INPUT=${input_sam} OUTPUT=${prefix}.sorted_reads.bam SORT_ORDER=coordinate
 	}
 	output {
@@ -148,7 +153,6 @@ task markdups{
 	File input_bam
 
 	command {
-		module load picard/2.9.0-Java-1.8.0_121
 		java -Xmx14G -jar ${picard} MarkDuplicates INPUT=${input_bam} OUTPUT=${prefix}.dedup_reads.bam METRICS_FILE=${prefix}.metrics.txt CREATE_INDEX=true
 	}
 	output {
@@ -167,7 +171,6 @@ task baserecal_pre{
 	File input_bam_index
 
 	command {
-		module load GATK/3.8-0-Java-1.8.0_121
 		java -Xmx14G -jar ${gatk} -T BaseRecalibrator -R ${ref} -I ${input_bam} -knownSites ${dbsnp} -o ${prefix}.recal_data.table
 	}
 	output {
@@ -185,7 +188,6 @@ task baserecal_post{
 	File recal_data
 
 	command {
-		module load GATK/3.8-0-Java-1.8.0_121
 		java -Xmx14G -jar ${gatk} -T BaseRecalibrator -R ${ref} -I ${input_bam} -knownSites ${dbsnp} -BQSR ${recal_data} -o ${prefix}.post_recal_data.table
 	}
 	output {
@@ -202,8 +204,6 @@ task anal_covars{
 
 
 	command {
-		module load GATK/3.8-0-Java-1.8.0_121
-		module load R/3.4.1-foss-2016b
 		java -Xmx14G -jar ${gatk} -T AnalyzeCovariates -R ${ref} -before ${recal_data} -after ${recal_data_post} -plots ${prefix}.recalibration_plots.pdf
 	}
 	output {
@@ -222,7 +222,6 @@ task print_reads{
 
 
 	command {
-		module load GATK/3.8-0-Java-1.8.0_121
 		java -Xmx14G -jar ${gatk} -T PrintReads -R ${ref} -I ${input_bam} -BQSR ${recal_data} -o ${prefix}.bam
 	}
 	output {
@@ -242,7 +241,6 @@ task haplotypecaller{
 
 
 	command {
-		module load GATK/3.8-0-Java-1.8.0_121
 		java -Xmx14G -jar ${gatk} -T HaplotypeCaller -R ${ref} -I ${input_bam} --emitRefConfidence GVCF -L ${targets} -ip 50 --dbsnp ${dbsnp} -o ${prefix}.g.vcf.gz
 	}
 	output {
