@@ -58,7 +58,7 @@ task contamination_check{
 	
 
 	command {
-		${verify_bamid} --verbose --ignoreRG ${contam_vcf} ${prefix} --bam ${bam_dir}/${prefix}.bam
+		${verify_bamid} --verbose --ignoreRG --vcf ${contam_vcf} --out ${prefix} --bam ${bam_dir}/${prefix}.bam
 	}
 	runtime {
             cpus: "4"
