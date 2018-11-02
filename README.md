@@ -51,6 +51,9 @@ The inputs is list of sample prefixes which are stored as a column in sample she
 
 ### gvcfs_to_annotated_vcf
 
+As an input you need a file containing all gvcf files you want to be joint genotyped.
+`find $PWD -name '*g.vcf' > gvcfs.list`
+
 This script incorporates 3 parts: 
     
     a) joint genotyping using GATK GenotypeGVCFs
