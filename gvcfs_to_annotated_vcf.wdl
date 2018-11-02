@@ -15,7 +15,6 @@ workflow gvcf_to_vcf {
   String eval_targets
 
   String inputSamples
-  String gvcf_dir
   String prefix
 
   String gatk
