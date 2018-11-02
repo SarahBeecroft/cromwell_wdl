@@ -74,7 +74,11 @@ Specify the files as needed.
 #SBATCH -J cromwell_wrap
 #SBATCH --mem=8000
 
-java -Dconfig.file=/gpfs/ycga/project/ysm/lek/sp2249/cromwell/slurm.conf -jar /gpfs/ycga/project/ysm/lek/sp2249/cromwell/cromwell-36.jar run /gpfs/ycga/project/ysm/lek/sp2249/cromwell/fastq_to_gvcf_multisample.wdl -i fastq_to_gvcf_multisample_inputs.json  -o fastq_to_gvcf_multisample.options
+java -Dconfig.file=/gpfs/ycga/project/ysm/lek/sp2249/cromwell/slurm.conf -jar \
+/gpfs/ycga/project/ysm/lek/sp2249/cromwell/cromwell-36.jar run \
+/gpfs/ycga/project/ysm/lek/sp2249/cromwell/fastq_to_gvcf_multisample.wdl \
+-i fastq_to_gvcf_multisample_inputs.json  \
+-o fastq_to_gvcf_multisample.options
 ```
 
 *Few notes on executing the launcg script*
