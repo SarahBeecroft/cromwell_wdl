@@ -93,8 +93,7 @@ task collect_metrics{
         File input_vcf
 
         command {
-                java -Xmx14G -jar ${picard} CollectVariantCallingMetrics \
-                INPUT=${input_vcf} OUTPUT=${prefix} TARGET_INTERVALS=${eval_targets}
+                java -Xmx14G -jar ${picard} CollectVariantCallingMetrics INPUT=${input_vcf} OUTPUT=${prefix} TARGET_INTERVALS=${eval_targets}
 
                 vcftools --vcf ${input_vcf} --relatedness2 --out ${prefix}
 
