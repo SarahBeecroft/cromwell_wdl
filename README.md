@@ -74,5 +74,11 @@ Specify the files as needed.
 java -Dconfig.file=/gpfs/ycga/project/ysm/lek/sp2249/cromwell/slurm.conf -jar /gpfs/ycga/project/ysm/lek/sp2249/cromwell/cromwell-36.jar run /gpfs/ycga/project/ysm/lek/sp2249/cromwell/fastq_to_gvcf_multisample.wdl -i fastq_to_gvcf_multisample_inputs.json  -o fastq_to_gvcf_multisample.options
 ```
 
+*Few notes on executing the launcg script*
 
- 
+- Save the launch script to something like 'launch.sh'
+- Then `sbatch launch.sh` to submit the job to the queue.
+- While submitting the job, be in the directory where you want the cromwell-execution folder containing all the intermediate files and logs to be generated. Most likely you want to be on your scratch60 space.
+- Intermediate files can get very huge in size, thus make sure that you have enough space.
+- you can `queue -u ${user}` to see all active jobs, the launch.sh is one of them.
+- to view the wrapper output you can look into the cromwell log file or `less slurm-${jobid}.out`
