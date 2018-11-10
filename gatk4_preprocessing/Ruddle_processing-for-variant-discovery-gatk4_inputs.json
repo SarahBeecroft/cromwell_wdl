@@ -1,0 +1,43 @@
+{
+  "##_COMMENT1": "SAMPLE NAME AND UNMAPPED BAMS",
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "MOV036-A170707-PRO-BLD",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "b37",
+  "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams_list": "/gpfs/ycga/scratch60/ysm/lek/sp2249/test/ubam.list",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "##_COMMENT2": "REFERENCE FILES", 
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.ref_sa": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.sa",
+  "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.ref_amb": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.amb",
+  "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.ref_bwt": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.ref_ann": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.ann",
+  "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.ref_pac": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.pac",
+  
+  "##_COMMENT3": "KNOWN SITES RESOURCES", 
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.known_indels.vcf"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.known_indels.vcf.idx"
+  ],
+
+  "##_COMMENT4": "MISC PROGRAM PARAMETERS", 
+  "PreProcessingForVariantDiscovery_GATK4.bwa_commandline": "bwa mem -p -v 3 -t 16 -Y $bash_ref_fasta",
+  "PreProcessingForVariantDiscovery_GATK4.compression_level": 5,
+
+  "##_COMMENT5": "JAVA OPTIONS", 
+  "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.java_opt": "-Xms3000m",
+  "PreProcessingForVariantDiscovery_GATK4.MergeBamAlignment.java_opt": "-Xms3000m",
+  "PreProcessingForVariantDiscovery_GATK4.MarkDuplicates.java_opt": "-Xms14000m",
+  "PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.java_opt_sort": "-Xms30000m",
+  "PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.java_opt_fix": "-Xms500m",
+  "PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.java_opt": "-Xms14000m",
+  "PreProcessingForVariantDiscovery_GATK4.GatherBqsrReports.java_opt": "-Xms3000m",
+  "PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.java_opt": "-Xms14000m",
+  "PreProcessingForVariantDiscovery_GATK4.GatherBamFiles.java_opt": "-Xms2000m"
+
+}
