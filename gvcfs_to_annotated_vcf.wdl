@@ -4,15 +4,14 @@
 # Make sure that you have bwa, vcftools, perl, tabix and picard ready to be accessed from command line.
 # For gatk and picard input string is specified in inputs.json.
 # Tested with the following versions on Ruddle:
-# GATK/3.8-0-Java-1.8.0_121, picard/2.9.0-Java-1.8.0_121, VCFtools/0.1.14-foss-2016a-Perl-5.22.1
+# GATK/3.8-0-Java-1.8.0_121, picard/2.9.0-Java-1.8.0_121, VCFtools/0.1.14-foss-2016a-Perl-5.22.1, Perl/5.24.1-foss-2016b
 
 
 workflow gvcf_to_vcf {
 
- 
-
   String ref
   String eval_targets
+  String dbsnp
 
   String inputSamples
   String gvcf_dir
@@ -38,8 +37,10 @@ workflow gvcf_to_vcf {
     call collect_metrics{
         input:    
 	    input_vcf = joint_gt.output_vcf,
+            input_vcf_index = joint_gt.output_vcf_index,
             picard = picard,
             prefix = prefix,
+	    dbsnp = dbsnp,
 	    eval_targets = eval_targets
     }
 
@@ -87,18 +88,18 @@ task joint_gt{
 }
 
 task collect_metrics{
-        String picard
+        String dbsnp
+	String picard
         String prefix
         String eval_targets
         File input_vcf
 
         command {
-                java -Xmx14G -jar ${picard} CollectVariantCallingMetrics \
-                INPUT=${input_vcf} OUTPUT=${prefix} TARGET_INTERVALS=${eval_targets}
+                java -Xmx14G -jar ${picard} CollectVariantCallingMetrics INPUT=${input_vcf} OUTPUT=${prefix} TARGET_INTERVALS=${eval_targets} DBSNP=${dbsnp}
 
-                vcftools --vcf ${input_vcf} --relatedness2 --out ${prefix}
+                vcftools --gzvcf ${input_vcf} --relatedness2 --out ${prefix}
 
-                vcftools --vcf ${input_vcf} --chr X --from-bp 2699520 --to-bp 154931043 --het --out ${prefix}
+                vcftools --gzvcf ${input_vcf} --chr X --from-bp 2699520 --to-bp 154931043 --het --out ${prefix}
 
         }
         output {
