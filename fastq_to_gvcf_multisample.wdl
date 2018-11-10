@@ -110,6 +110,8 @@ workflow fastq_to_gvcf {
 	    Array[File] gvcf_index = haplotypecaller.output_gvcf_index
 	    Array[File] bam = print_reads.output_bam
 	    Array[File] bam_index = print_reads.output_bam_index
+	    Array[File] dedup_metrics = markdups.metrics
+	    Array[File] recal_plot = anal_covars.recal_plots
 	  }
 
   }

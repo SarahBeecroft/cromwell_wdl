@@ -14,7 +14,6 @@ workflow gvcf_to_vcf {
   String dbsnp
 
   String inputSamples
-  String gvcf_dir
   String prefix
 
   String gatk

@@ -1,0 +1,13 @@
+{
+  "gvcf_to_vcf.dbsnp": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dbsnp138.vcf",
+  "gvcf_to_vcf.picard": "$EBROOTPICARD/picard.jar",
+  "gvcf_to_vcf.plugindir": "/gpfs/ycga/project/ysm/lek/sp2249/.vep/Plugins/",
+  "gvcf_to_vcf.ref": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
+  "gvcf_to_vcf.gatk": "$EBROOTGATK/GenomeAnalysisTK.jar",
+  "gvcf_to_vcf.refdir": "/gpfs/ycga/project/ysm/lek/ml2529/reference",
+  "gvcf_to_vcf.eval_targets": "/gpfs/ycga/project/ysm/lek/ml2529/reference/exome_evaluation_regions.v1.interval_list",
+  "gvcf_to_vcf.prefix": "Weihl_140WES",
+  "gvcf_to_vcf.vepcache": "/gpfs/ycga/project/ysm/lek/ml2529/vep_cache",
+  "gvcf_to_vcf.inputSamples": "/gpfs/ycga/scratch60/ysm/lek/sp2249/Weihl/gvcfs.list",
+  "gvcf_to_vcf.vepdir": "/gpfs/ycga/project/ysm/lek/ml2529/VEP"
+}
