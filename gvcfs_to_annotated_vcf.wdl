@@ -92,6 +92,7 @@ task collect_metrics{
         String prefix
         String eval_targets
         File input_vcf
+	File input_vcf_index
 
         command {
                 java -Xmx14G -jar ${picard} CollectVariantCallingMetrics INPUT=${input_vcf} OUTPUT=${prefix} TARGET_INTERVALS=${eval_targets} DBSNP=${dbsnp}
