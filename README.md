@@ -81,7 +81,7 @@ java -Dconfig.file=/gpfs/ycga/project/ysm/lek/sp2249/cromwell/slurm.conf -jar \
 -o fastq_to_gvcf_multisample.options
 ```
 
-*Few notes on executing the launcg script*
+*Few notes on executing the launch script*
 
 - Save the launch script to something like 'launch.sh'
 - Then `sbatch launch.sh` to submit the job to the queue.
