@@ -1,0 +1,6 @@
+{
+  "bam_to_cram.ConvertToCram.ref_fasta": "String",
+  "bam_to_cram.ConvertToCram.input_bam": "String",
+  "bam_to_cram.output_basename": "String",
+  "bam_to_cram.ConvertToCram.output_basename": "String"
+}
