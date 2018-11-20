@@ -1,0 +1,21 @@
+{
+  "HaplotypeCallerGvcf_GATK4.input_bam": "/gpfs/ycga/project/ysm/gruber/pg487/AVNRT-Lek/processed/UI-1913/UI-1913.bam",
+  "HaplotypeCallerGvcf_GATK4.input_bam_index": "/gpfs/ycga/project/ysm/gruber/pg487/AVNRT-Lek/processed/UI-1913/UI-1913.bai",
+  
+  "HaplotypeCallerGvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/sp2249/refs/gatk_intervals/b37_wgs_scattered_calling_intervals_localpaths.txt",
+
+  "HaplotypeCallerGvcf_GATK4.make_gvcf": "(optional) Boolean?",
+  "HaplotypeCallerGvcf_GATK4.HaplotypeCaller.contamination": "(optional) Float?",
+
+  "HaplotypeCallerGvcf_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
+  "HaplotypeCallerGvcf_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.fai",
+  "HaplotypeCallerGvcf_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dict",
+  
+  "HaplotypeCallerGvcf_GATK4.CramToBamTask.cpus": "(optional) Int?",
+  "HaplotypeCallerGvcf_GATK4.CramToBamTask.mem_gb": "(optional) Int?",
+  "HaplotypeCallerGvcf_GATK4.HaplotypeCaller.cpus": "(optional) Int?",
+  "HaplotypeCallerGvcf_GATK4.HaplotypeCaller.java_options": "(optional) String?",
+  "HaplotypeCallerGvcf_GATK4.HaplotypeCaller.mem_gb": "(optional) Int?",
+  "HaplotypeCallerGvcf_GATK4.MergeGVCFs.cpus": "(optional) Int?",
+  "HaplotypeCallerGvcf_GATK4.MergeGVCFs.mem_gb": "(optional) Int?"
+}
