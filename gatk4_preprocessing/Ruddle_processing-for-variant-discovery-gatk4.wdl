@@ -378,7 +378,7 @@ task MarkDuplicates {
   }
   runtime {
     cpus: 8
-    requested_memory: 32000
+    requested_memory: 48000
   }
   output {
     File output_bam = "${output_bam_basename}.bam"
