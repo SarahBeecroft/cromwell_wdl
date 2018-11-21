@@ -32,7 +32,7 @@
   "##_COMMENT5": "JAVA OPTIONS", 
   "PreProcessingForVariantDiscovery_GATK4.SamToFastqAndBwaMem.java_opt": "-Xms3000m",
   "PreProcessingForVariantDiscovery_GATK4.MergeBamAlignment.java_opt": "-Xms3000m",
-  "PreProcessingForVariantDiscovery_GATK4.MarkDuplicates.java_opt": "-Xms14000m",
+  "PreProcessingForVariantDiscovery_GATK4.MarkDuplicates.java_opt": "-Xms40000m",
   "PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.java_opt_sort": "-Xms30000m",
   "PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.java_opt_fix": "-Xms500m",
   "PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.java_opt": "-Xms14000m",
