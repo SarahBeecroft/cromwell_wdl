@@ -343,8 +343,8 @@ task SortAndFixTags {
       --REFERENCE_SEQUENCE ${ref_fasta}
   }
   runtime {
-    cpus: 4
-    requested_memory: 16000
+    cpus: 8
+    requested_memory: 32000
   }
   output {
     File output_bam = "${output_bam_basename}.bam"
