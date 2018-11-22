@@ -400,7 +400,7 @@ task GenotypeGVCFs {
     tar -xf ${workspace_tar}
     WORKSPACE=$( basename ${workspace_tar} .tar)
 
-    gatk --java-options "-Xmx5g -Xms5g" \
+    gatk --java-options "-Xmx14g -Xms5g" \
      GenotypeGVCFs \
      -R ${ref_fasta} \
      -O ${output_vcf_filename} \
@@ -413,7 +413,7 @@ task GenotypeGVCFs {
   >>>
   runtime {
     cpus: 4
-    requested_memory: 8000  
+    requested_memory: 16000  
   }
   output {
     File output_vcf = "${output_vcf_filename}"
@@ -433,14 +433,14 @@ task HardFilterAndMakeSitesOnlyVcf {
   command {
     set -e
 
-    gatk --java-options "-Xmx3g -Xms3g" \
+    gatk --java-options "-Xmx15g -Xms3g" \
       VariantFiltration \
       --filter-expression "ExcessHet > ${excess_het_threshold}" \
       --filter-name ExcessHet \
       -O ${variant_filtered_vcf_filename} \
       -V ${vcf}
 
-    gatk --java-options "-Xmx3g -Xms3g" \
+    gatk --java-options "-Xmx15g -Xms3g" \
       MakeSitesOnlyVcf \
       --INPUT ${variant_filtered_vcf_filename} \
       --OUTPUT ${sites_only_vcf_filename}
@@ -448,7 +448,7 @@ task HardFilterAndMakeSitesOnlyVcf {
   }
   runtime {
     cpus: 4
-    requested_memory: 8000  
+    requested_memory: 16000  
   }
   output {
     File variant_filtered_vcf = "${variant_filtered_vcf_filename}"
