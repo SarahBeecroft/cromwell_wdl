@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH -n 1
-#SBATCH -c 4
+#SBATCH -c 8
 #SBATCH -J launch_cromwell
-#SBATCH --mem=8000
+#SBATCH --mem=64000
 
 java -Dconfig.file=/gpfs/ycga/project/ysm/lek/sp2249/cromwell/slurm.conf -jar \
 /gpfs/ycga/project/ysm/lek/sp2249/cromwell/cromwell-36.jar run \
