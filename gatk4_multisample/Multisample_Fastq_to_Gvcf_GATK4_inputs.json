@@ -5,7 +5,7 @@
   "Multisample_Fastq_to_Gvcf_GATK4.unmapped_bam_suffix": ".bam",
 
   "##_COMMENT2": "REFERENCE FILES",
-  "Multisample_Fastq_to_Gvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/sp2249/refs/gatk_intervals/Broad.human.exome.b37.scattered.local.list", 
+  "Multisample_Fastq_to_Gvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/sp2249/refs/leklab_intervals/exome_calling_regions.v1.scattered.list", 
   "Multisample_Fastq_to_Gvcf_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dict",
   "Multisample_Fastq_to_Gvcf_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
   "Multisample_Fastq_to_Gvcf_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.fai",
