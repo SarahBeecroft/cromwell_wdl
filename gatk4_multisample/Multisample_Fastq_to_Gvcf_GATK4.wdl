@@ -120,7 +120,7 @@ task make_fastq_file {
   String sample_name
 
   command {
-    cat ${inputSamplesFile} | grep "^${sample_name}" > ${sample_name}.fastqs.txt
+    cat ${inputSamplesFile} | grep "^${sample_name}\s" > ${sample_name}.fastqs.txt
   }
 
   runtime {
