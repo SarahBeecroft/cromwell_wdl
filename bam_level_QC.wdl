@@ -17,6 +17,8 @@ workflow bam_QC {
   File inputSamplesFile
   Array[Array[String]] inputSamples = read_tsv(inputSamplesFile)
   String bam_dir
+  String bam_suffix  
+
 
   String picard
  
@@ -26,6 +28,7 @@ workflow bam_QC {
 	  call contamination_check {
 	  	input:
 	  		bam_dir=bam_dir,
+			bam_suffix=bam_suffix,
 	  		prefix = sample[0],
 	  		verify_bamid = verify_bamid,
 	  		contam_vcf = contam_vcf
@@ -36,6 +39,7 @@ workflow bam_QC {
 	  		picard = picard,
 	  		prefix = sample[0],
 	  		bam_dir=bam_dir,
+			bam_suffix=bam_suffix,
 	  		ref = ref,	
 	  		targets = targets
 	  }	
@@ -52,13 +56,14 @@ workflow bam_QC {
 
 task contamination_check{
 	String bam_dir
+	String bam_suffix
 	String prefix
 	String verify_bamid
 	String contam_vcf
 	
 
 	command {
-		${verify_bamid} --verbose --ignoreRG --vcf ${contam_vcf} --out ${prefix} --bam ${bam_dir}/${prefix}.bam
+		${verify_bamid} --verbose --ignoreRG --vcf ${contam_vcf} --out ${prefix} --bam ${bam_dir}/${prefix}${bam_suffix}
 	}
 	runtime {
             cpus: "4"
@@ -75,11 +80,12 @@ task coverage{
 	String picard
 	String prefix
 	String bam_dir
+	String bam_suffix
 	String ref
 	String targets
 
 	command {
-		java -Xmx6G -jar ${picard} CollectHsMetrics R=${ref} TARGET_INTERVALS=${targets} BAIT_INTERVALS=${targets} INPUT=${bam_dir}/${prefix}.bam OUTPUT=${prefix}.hs_metrics.txt
+		java -Xmx6G -jar ${picard} CollectHsMetrics R=${ref} TARGET_INTERVALS=${targets} BAIT_INTERVALS=${targets} INPUT=${bam_dir}/${prefix}${bam_suffix} OUTPUT=${prefix}.hs_metrics.txt
 	}
 	runtime {
             cpus: "4"

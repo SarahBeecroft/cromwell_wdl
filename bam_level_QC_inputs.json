@@ -2,8 +2,9 @@
   "bam_QC.contam_vcf": "/gpfs/ycga/project/ysm/lek/ml2529/reference/ExomeContam.vcf",
   "bam_QC.verify_bamid": "/gpfs/ycga/project/ysm/lek/ml2529/bin/verifyBamID",
   "bam_QC.ref": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
-  "bam_QC.bam_dir": "~/scratch60/Weihl/processed/",
+  "bam_QC.bam_dir": "~/scratch60/HK_exomes/processed/",
   "bam_QC.targets": "/gpfs/ycga/project/ysm/lek/ml2529/reference/exome_evaluation_regions.v1.interval_list",
   "bam_QC.picard": "$EBROOTPICARD/picard.jar",
-  "bam_QC.inputSamplesFile": "/home/sp2249/scratch60/Weihl/samples_all.txt"
+  "bam_QC.inputSamplesFile": "/home/sp2249/scratch60/HK_exomes/samples.txt",
+  "bam_QC.bam_suffix": ".b37.bam"
 }
