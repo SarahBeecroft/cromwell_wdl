@@ -57,7 +57,7 @@ Each sample should have one g.vcf file.
 
 Also reference genome, calling targets etc need to be specified in wdl inputs.
 
-For JointGenotyping.unpadded_intervals_file - cannot use targets file with all exome targets, as it iterates over all targets, and thus generates > 200 000 jobs to go through eacg exome target. I have tested it with the wgs calling intervals, which worked fine, as WES targets are applied to haplotype caller anyways. 
+For JointGenotyping.unpadded_intervals_file - cannot use targets file with all exome targets, as it iterates over all targets, and thus generates > 200 000 jobs to go through each exome target. I have tested it with the wgs calling intervals, which worked fine, as WES targets are applied to haplotype caller anyways. 
 
 ### Outputs
 
