@@ -57,6 +57,9 @@ As cromwell generates a lot of intermediate files it is advised to run all the j
 
 Use `sbatch launch_cromwell.sh`
 
+After the pipeline has completed you can move outputs to a new directory to get a cleaner output. I usually make directory called 'processed', and then move files to that directory using command similar to this (one has to find a search pattern that finds all samples based on sample_ids in the project):
+`find Multisample_Fastq_to_Gvcf_GATK4/ -name 'NMD*' -exec mv {} processed/ \;`
+
 ## Multisample_jointgt_GATK4.wdl
 
 ***Important***: This workflow need at least 1 wgs or 30 wes samples due to VQSR requirements. Panels are not supported. 
