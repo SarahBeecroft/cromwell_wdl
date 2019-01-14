@@ -15,6 +15,16 @@ Workflow consists of two scripts:
 
 Optimized for Yale Ruddle HPC. Uses subworkflow structure - main workflow calls subworkflow for each unique sample id. 
 
+## Module requirements (Pipeline has been tested with these versions)
+
+```
+BWA/0.7.15-foss-2016a
+GATK/4.0.6.0-Java-1.8.0_121
+SAMtools/1.5-foss-2016b
+picard/2.9.0-Java-1.8.0_121
+Python/2.7.13-foss-2016b
+```
+On Ruddle after you have loaded the variants do not forget to `module save`, by doing this the modules are available for every queued job.
 
 ## Multisample_Fastq_to_Gvcf
 ### Inputs
@@ -40,6 +50,10 @@ List of unique sample ids in sample sheet.
 ### Launching the pipeline
 
 Make sample sheet, modify inputs, options and launch files as needed.
+
+General recommendation: copy launch scpript, inputs json and options file into your project directory, and modify there. No need to copy the wdls or jar file. 
+
+As cromwell generates a lot of intermediate files it is advised to run all the jobs in the scratch space. 
 
 Use `sbatch launch_cromwell.sh`
 
