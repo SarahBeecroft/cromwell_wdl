@@ -5,24 +5,24 @@
   "Multisample_Fastq_to_Gvcf_GATK4.unmapped_bam_suffix": ".bam",
 
   "##_COMMENT2": "REFERENCE FILES",
-  "Multisample_Fastq_to_Gvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/sp2249/refs/leklab_intervals/exome_calling_regions.v1.scattered.list", 
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dict",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.fai",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_sa": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.sa",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_amb": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.amb",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_bwt": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.bwt",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_ann": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.ann",
-  "Multisample_Fastq_to_Gvcf_GATK4.ref_pac": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.fasta.pac",
+  "Multisample_Fastq_to_Gvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/exome_calling_regions.v1.scattered.list", 
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dict",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.fai",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_sa": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.sa",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_amb": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.amb",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_bwt": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.bwt",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_ann": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.ann",
+  "Multisample_Fastq_to_Gvcf_GATK4.ref_pac": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.pac",
   
   "##_COMMENT3": "KNOWN SITES RESOURCES", 
-  "Multisample_Fastq_to_Gvcf_GATK4.dbSNP_vcf": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dbsnp138.vcf",
-  "Multisample_Fastq_to_Gvcf_GATK4.dbSNP_vcf_index": "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.dbsnp138.vcf.idx",
+  "Multisample_Fastq_to_Gvcf_GATK4.dbSNP_vcf": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dbsnp138.vcf",
+  "Multisample_Fastq_to_Gvcf_GATK4.dbSNP_vcf_index": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dbsnp138.vcf.idx",
   "Multisample_Fastq_to_Gvcf_GATK4.known_indels_sites_VCFs": [
-    "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.known_indels.vcf"
+    "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.known_indels.vcf"
   ],
   "Multisample_Fastq_to_Gvcf_GATK4.known_indels_sites_indices": [
-    "/gpfs/ycga/project/ysm/lek/ml2529/reference/Homo_sapiens_assembly19.known_indels.vcf.idx"
+    "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.known_indels.vcf.idx"
   ],
 
   "##_COMMENT4": "MISC PROGRAM PARAMETERS", 

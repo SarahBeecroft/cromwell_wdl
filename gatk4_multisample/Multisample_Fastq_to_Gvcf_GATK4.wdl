@@ -19,6 +19,7 @@ workflow Multisample_Fastq_to_Gvcf_GATK4 {
   File ref_bwt
   File ref_pac
   File ref_sa
+  File? ref_alt
 
   String bwa_commandline
   Int compression_level
@@ -66,6 +67,7 @@ workflow Multisample_Fastq_to_Gvcf_GATK4 {
         ref_bwt = ref_bwt,
         ref_pac = ref_pac,
         ref_sa = ref_sa,
+        ref_alt = ref_alt,
 
         bwa_commandline = bwa_commandline,
         compression_level = compression_level,
@@ -101,7 +103,7 @@ task make_uniq_samples_file {
   File inputSamplesFile
 
   command {
-    cat ${inputSamplesFile} | cut -f1 | uniq > uniq_samples.list
+    cat ${inputSamplesFile} | cut -f1 | sort | uniq > uniq_samples.list
   }
 
   runtime {

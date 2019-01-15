@@ -56,6 +56,7 @@ workflow Fastq_to_Gvcf_GATK4 {
   File ref_bwt
   File ref_pac
   File ref_sa
+  File? ref_alt
 
   String bwa_commandline
   Int compression_level
@@ -103,7 +104,8 @@ workflow Fastq_to_Gvcf_GATK4 {
         ref_bwt = ref_bwt,
         ref_pac = ref_pac,
         ref_sa = ref_sa,
-        compression_level = compression_level
+        ref_alt = ref_alt,
+	compression_level = compression_level
      }
 
     # Merge original uBAM and BWA-aligned BAM 
