@@ -51,9 +51,9 @@ List of unique sample ids in sample sheet.
 
 Make sample sheet, modify inputs, options and launch files as needed.
 
-General recommendation: copy launch scpript, inputs json and options file into your project directory, and modify there. No need to copy the wdls or jar file. 
+_General recommendation_: First, make a directory for your project in your scratch space. Then copy launch scpript, inputs json and options file into that directory, and modify there. No need to copy the wdls or jar file. 
 
-As cromwell generates a lot of intermediate files it is advised to run all the jobs in the scratch space. 
+**As cromwell generates a lot of intermediate files it is advised to run all the jobs in the scratch space.** 
 
 Use `sbatch launch_cromwell.sh`
 
