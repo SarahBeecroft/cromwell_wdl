@@ -20,10 +20,12 @@
   "Multisample_Fastq_to_Gvcf_GATK4.dbSNP_vcf": "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Homo_sapiens_assembly38.dbsnp138.vcf",
   "Multisample_Fastq_to_Gvcf_GATK4.dbSNP_vcf_index": "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
   "Multisample_Fastq_to_Gvcf_GATK4.known_indels_sites_VCFs": [
-    "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Homo_sapiens_assembly38.known_indels.vcf"
+    "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Homo_sapiens_assembly38.known_indels.vcf.gz"
   ],
   "Multisample_Fastq_to_Gvcf_GATK4.known_indels_sites_indices": [
-    "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Homo_sapiens_assembly38.known_indels.vcf.idx"
+    "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/gpfs/ycga/project/ysm/lek/shared/resources/hg38/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
   ],
 
   "##_COMMENT4": "MISC PROGRAM PARAMETERS", 
