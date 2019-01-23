@@ -10,7 +10,7 @@
 
   "##_COMMENT3": "INTERVALS",
   "JointGenotyping.eval_interval_list": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/exome_evaluation_regions.v1.interval_list",
-  "JointGenotyping.unpadded_intervals_file": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/b37.wgs_calling_regions.v1.list",
+  "JointGenotyping.unpadded_intervals_file": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/b37.custom_100Mb.interval",
   
   "##_COMMENT4": "RESOURCE FILES",
   "JointGenotyping.dbsnp_vcf": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dbsnp138.vcf",
