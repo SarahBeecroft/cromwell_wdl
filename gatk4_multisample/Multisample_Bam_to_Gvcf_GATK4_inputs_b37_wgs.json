@@ -1,0 +1,8 @@
+{
+  "Multisample_Bam_to_Gvcf_GATK4.inputSamplesFile": "samples.list",
+  "Multisample_Bam_to_Gvcf_GATK4.ref_name": "b37",
+  "Multisample_Bam_to_Gvcf_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta",
+  "Multisample_Bam_to_Gvcf_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.fai",
+  "Multisample_Bam_to_Gvcf_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dict",
+  "Multisample_Bam_to_Gvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/b37_wgs_scattered_calling_intervals_localpaths.txt"
+}
