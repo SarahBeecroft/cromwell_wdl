@@ -1,0 +1,33 @@
+{
+  "##_COMMENT1": "SAMPLES",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.inputSamplesFile": "/gpfs/ycga/scratch60/ysm/lek/sp2249/HK_exomes/bam/samples.txt",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_name": "b37",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.unmapped_bam_suffix": ".bam",
+
+  "##_COMMENT2": "REFERENCE FILES",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.scattered_calling_intervals_list": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/exome_calling_regions.v1.scattered.list", 
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_dict": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dict",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_fasta": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_fasta_index": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.fai",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_sa": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.sa",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_amb": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.amb",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_bwt": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.bwt",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_ann": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.ann",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.ref_pac": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.pac",
+  
+  "##_COMMENT3": "KNOWN SITES RESOURCES", 
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.dbSNP_vcf": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dbsnp138.vcf",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.dbSNP_vcf_index": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dbsnp138.vcf.idx",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.known_indels_sites_VCFs": [
+    "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Mills_and_1000G_gold_standard.indels.b37.vcf.gz",
+    "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.known_indels.vcf"
+  ],
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.known_indels_sites_indices": [
+    "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Mills_and_1000G_gold_standard.indels.b37.vcf.gz.tbi",
+    "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.known_indels.vcf.idx"
+  ],
+
+  "##_COMMENT4": "MISC PROGRAM PARAMETERS", 
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.bwa_commandline": "bwa mem -p -v 3 -t 16 -Y $bash_ref_fasta",
+  "Multisample_Bam_to_Ubam_to_Gvcf_GATK4.compression_level": 5
+}

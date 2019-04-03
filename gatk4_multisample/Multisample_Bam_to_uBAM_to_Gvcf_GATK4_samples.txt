@@ -1,0 +1,8 @@
+DNA15-10305B	/home/sp2249/scratch60/HK_exomes/bam/DNA15-10305B/DNA15-10305B_recalibrated.bam
+DNA16-00301B	/home/sp2249/scratch60/HK_exomes/bam/DNA16-00301B/DNA16-00301B_recalibrated.bam
+DNA16-07391B	/home/sp2249/scratch60/HK_exomes/bam/DNA16-07391B/DNA16-07391B_recalibrated.bam
+DNA16-11299B	/home/sp2249/scratch60/HK_exomes/bam/DNA16-11299B/DNA16-11299B_recalibrated.bam
+DNA16-00300B	/home/sp2249/scratch60/HK_exomes/bam/DNA16-00300B/DNA16-00300B_recalibrated.bam
+DNA15-15749B	/home/sp2249/scratch60/HK_exomes/bam/DNA15-15749B/DNA15-15749B_recalibrated.bam
+DNA15-12607B	/home/sp2249/scratch60/HK_exomes/bam/DNA15-12607B/DNA15-12607B_recalibrated.bam
+DNA14-27032B	/home/sp2249/scratch60/HK_exomes/bam/DNA14-27032B/DNA14-27032B_recalibrated.bam
