@@ -1,0 +1,12 @@
+{		
+	"CNVGermlineCohortWorkflow.cohort_entity_id": "HK_155_cohort",
+	"CNVGermlineCohortWorkflow.bam_file_list": "/home/sp2249/project/gcnv/hk_all.bam.list",
+	"CNVGermlineCohortWorkflow.contig_ploidy_priors": "/home/sp2249/project/gcnv/contig_priors.tsv",
+	"CNVGermlineCohortWorkflow.intervals": "/home/sp2249/project/gcnv/test2.preprocessed.interval_list",
+	"CNVGermlineCohortWorkflow.num_intervals_per_scatter": "10000",
+	"CNVGermlineCohortWorkflow.ref_copy_number_autosomal_contigs": "2",
+	"CNVGermlineCohortWorkflow.allosomal_contigs": ["X","Y"],
+	"CNVGermlineCohortWorkflow.ref_fasta": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta",
+	"CNVGermlineCohortWorkflow.ref_fasta_fai": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.fasta.fai",
+	"CNVGermlineCohortWorkflow.ref_fasta_dict": "/gpfs/ycga/project/ysm/lek/shared/resources/b37/Homo_sapiens_assembly19.dict"
+}
