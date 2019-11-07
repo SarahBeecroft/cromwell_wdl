@@ -63,7 +63,7 @@ or more generalizable command moving all files to processed directory: `find Mul
 
 ## Multisample_jointgt_GATK4.wdl
 
-***Important***: This workflow need at least 1 wgs or 30 wes samples due to VQSR requirements. Panels are not supported. 
+***Important***: This workflow needs at least 1 wgs or 30 wes samples due to VQSR requirements. Panels are not supported. 
 
 ### Inputs
 
